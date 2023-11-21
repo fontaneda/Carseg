@@ -1,0 +1,206 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="page_master.master.vb" Inherits="WebCallCenterAutomatizado.page_master" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Hunter - CallCenter Autmatizacion</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet"/>
+    <link rel="icon" href="../images/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../styles/all.min.css"/>
+    <link rel="stylesheet" href="../styles/ionicons.min.css"/>
+    <link rel="stylesheet" href="../styles/iconkit.min.css"/>
+    <link rel="stylesheet" href="../styles/perfect-scrollbar.css"/>
+    <link rel="stylesheet" href="../styles/theme.min.css"/>
+    <link rel="stylesheet" href="../styles/dataTables.bootstrap4.min.css"/>
+    <link rel="stylesheet" href="../styles/jquery-jvectormap.css"/>
+    <link rel="stylesheet" href="../styles/tempusdominus-bootstrap-4.min.css"/>
+    <link rel="stylesheet" href="../styles/weather-icons.min.css"/>
+    <link rel="stylesheet" href="../styles/c3.min.css"/>
+    <link rel="stylesheet" href="../styles/owl.carousel.css"/>
+    <link rel="stylesheet" href="../styles/owl.theme.default.css"/>
+    <link rel="stylesheet" href="../styles/style_custom.css" />
+    <script src="../scripts/modernizr-2.8.3.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="wrapper">
+
+    <form id="frm_page" runat="server">
+
+        <header class="header-top" header-theme="dark">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between">
+                    <div class="top-menu d-flex align-items-center">
+                        <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+                        <button type="button" id="navbar-fullscreen" class="nav-link"><i class="ik ik-maximize"></i></button>
+                    </div>
+                    <div class="top-menu d-flex align-items-center">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="ik ik-bell">
+                                </i>
+                                <span class="badge bg-danger">
+                                    <asp:Label ID="img_adm_notifica_cantidad" runat="server" Text="0"></asp:Label>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right notification-dropdown" aria-labelledby="notiDropdown">
+                                <h4 class="header">Notificaciones</h4>
+                                <div class="notifications-wrap">
+                                    <asp:Repeater ID="rpt_adm_notificacion" runat="server">
+                                        <ItemTemplate>
+                                            <a href="#" class="media">
+                                                <span class="d-flex">
+                                                    <img id="img_adm_notifica_icono" runat="server" src="../images/icons/notifica.jpg" class="rounded-circle" alt="">
+                                                </span>
+                                                <span class="media-body">
+                                                    <span class="heading-font-family media-heading">
+                                                        <asp:Label ID="lbl_adm_notifica_cabecera" runat="server" Text=""></asp:Label>
+                                                    </span> 
+                                                    <span class="media-content">
+                                                        <asp:Label ID="lbl_adm_notifica_mensaje" runat="server" Text=""></asp:Label>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img id="img_adm_setup_icono" runat="server" class="avatar" src="../images/icons/user.jpg" alt="">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                <a class="dropdown-item">
+                                    <i class="ik ik-user dropdown-icon">
+                                    </i> 
+                                    <asp:Button ID="btn_master_itmperfil" runat="server" Text="Perfil" BorderWidth="0" BackColor="Transparent" Width="90%" style="TEXT-ALIGN: left" />
+                                </a>
+                                <a class="dropdown-item">
+                                    <i class="ik ik-settings dropdown-icon">
+                                    </i> 
+                                    <asp:Button ID="btn_master_itmconfiguracion" runat="server" Text="Configuración" BorderWidth="0" BackColor="Transparent" Width="90%" style="TEXT-ALIGN: left" />
+                                </a>
+                                <a class="dropdown-item">
+                                    <i class="ik ik-power dropdown-icon">
+                                    </i> 
+                                    <asp:Button ID="btnm_master_itmcerrarsesion" runat="server" Text="Cerrar Sesión" BorderWidth="0" BackColor="Transparent" Width="90%" style="TEXT-ALIGN: left" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="page-wrap">
+            <div class="app-sidebar colored">
+                <div class="sidebar-header">
+                    <a class="header-brand" href="index.html">
+                        <span class="text">Accesos Call Center</span>
+                    </a>
+                    <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
+                </div>
+                <div class="sidebar-content">
+                    <div class="nav-container">
+                        <nav id="main-menu-navigation" class="navigation-main">
+                            <div class="nav-lavel">Campañas</div>
+                            <div class="nav-item active" id="itm_master_menu1" runat="server">
+                                <a href="../pages/page_admintablero.aspx">
+                                    <i class="ik ik-bar-chart-2">
+                                    </i>
+                                    <span>
+                                        <asp:Button ID="btn_mnu_tablero" runat="server" BackColor="Transparent" Text="Tablero" BorderWidth="0" style="TEXT-ALIGN: left" />
+                                    </span> 
+                                    <span class="badge badge-success">
+                                        Admin
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="nav-item" id="itm_master_menu2" runat="server">
+                                <a href="../pages/page_admincampania.aspx">
+                                    <i class="ik ik-menu">
+                                    </i>
+                                    <span>
+                                        <asp:Button ID="btn_mnu_creacion" runat="server" BackColor="Transparent" Text="Creación" BorderWidth="0" style="TEXT-ALIGN: left" />
+                                    </span> 
+                                    <span class="badge badge-success">
+                                        Admin
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="nav-item" id="itm_master_menu3" runat="server">
+                                <a href="../pages/page_adminconsulta.aspx">
+                                    <i class="ik ik-bar-chart-2">
+                                    </i>
+                                    <span>
+                                        <asp:Button ID="btn_mnu_consulta" runat="server" BackColor="Transparent" Text="Consultas" BorderWidth="0" style="TEXT-ALIGN: left" />
+                                    </span>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="w-100 clearfix">
+                    <span class="text-center text-sm-left d-md-inline-block">Copyright Carseg S.A. Derechos Reservados 2023.</span>
+                </div>
+            </footer>   
+        </div>
+        
+
+
+        <div id="myModalmaster" class="modal" runat="server">
+            <div class="modal-content">
+                <span>
+                <asp:Label ID="lbl_mastermodaltitulo" runat="server" Text="Mensaje del sistema" CssClass="titulo" >
+                </asp:Label>
+                    <asp:Button ID="btn_mastermodalclose" runat="server" Text="X" BorderWidth="0px" CssClass="close" />
+                </span>
+                <hr class="linea" />
+                <p>
+                    <asp:Label ID="txt_mastermodaltexto" runat="server" Text="">
+                    </asp:Label>
+                </p>
+            </div>
+        </div>
+
+    
+    </form>
+    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../scripts/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="../scripts/popper.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/perfect-scrollbar.min.js"></script>
+    <script src="../scripts/screenfull.js"></script>
+    <script src="../scripts/jquery.dataTables.min.js"></script>
+    <script src="../scripts/dataTables.bootstrap4.min.js"></script>
+    <script src="../scripts/dataTables.responsive.min.js"></script>
+    <script src="../scripts/responsive.bootstrap4.min.js"></script>
+    <script src="../scripts/jquery-jvectormap.min.js"></script>
+    <script src="../scripts/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="../scripts/moment.js"></script>
+    <script src="../scripts/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../scripts/d3.min.js"></script>
+    <script src="../scripts/c3.min.js"></script>
+    <script src="../scripts/tables.js"></script>
+    <script src="../scripts/widgets.js"></script>
+    <script src="../scripts/charts.js"></script>
+    <script src="../scripts/theme.min.js"></script>
+</body>
+</html>
