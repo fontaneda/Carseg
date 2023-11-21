@@ -1,0 +1,617 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebCallCenterAutomatizado
+</name>
+</assembly>
+<members>
+<member name="T:WebCallCenterAutomatizado.My.MyWebExtension">
+ <summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:WebCallCenterAutomatizado.My.MyWebExtension.Computer">
+ <summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member>
+<member name="P:WebCallCenterAutomatizado.My.MyWebExtension.User">
+ <summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member>
+<member name="P:WebCallCenterAutomatizado.My.MyWebExtension.Request">
+ <summary>
+ Devuelve un objeto Request.
+ </summary>
+</member>
+<member name="P:WebCallCenterAutomatizado.My.MyWebExtension.Response">
+ <summary>
+ Devuelve un objeto Response.
+ </summary>
+</member>
+<member name="P:WebCallCenterAutomatizado.My.MyWebExtension.Log">
+ <summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._cmb_creacionfiltroconvenios">
+<summary>
+Control cmb_creacionfiltroconvenios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._cmb_creacionfiltromeses">
+<summary>
+Control cmb_creacionfiltromeses.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._cmb_creacionfiltrocampanias">
+<summary>
+Control cmb_creacionfiltrocampanias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._btn_creacionfiltros">
+<summary>
+Control btn_creacionfiltros.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._txt_creacioncabeceracampania">
+<summary>
+Control txt_creacioncabeceracampania.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._cmb_creacionagentecampania">
+<summary>
+Control cmb_creacionagentecampania.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._txt_creacioncantidadcampania">
+<summary>
+Control txt_creacioncantidadcampania.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._btn_creacionasigna">
+<summary>
+Control btn_creacionasigna.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._rpt_creaciondetalle">
+<summary>
+Control rpt_creaciondetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admincampania._btn_consultadetallegrabar">
+<summary>
+Control btn_consultadetallegrabar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._cmb_consulta_tipo">
+<summary>
+Control cmb_consulta_tipo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._cmb_consulta_convenio">
+<summary>
+Control cmb_consulta_convenio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._dtp_consulta_fechadesde">
+<summary>
+Control dtp_consulta_fechadesde.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._dtp_consulta_fechahasta">
+<summary>
+Control dtp_consulta_fechahasta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._cmb_consulta_ejecutiva">
+<summary>
+Control cmb_consulta_ejecutiva.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._btn_consultafiltros">
+<summary>
+Control btn_consultafiltros.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._rpt_consulta_cabecera">
+<summary>
+Control rpt_consulta_cabecera.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._lbl_consultacabeceradetalle">
+<summary>
+Control lbl_consultacabeceradetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._rpt_consultadetalle">
+<summary>
+Control rpt_consultadetalle.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsulta._btn_consultadetallegrabar">
+<summary>
+Control btn_consultadetallegrabar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_adminconsultaavanzada._form1">
+<summary>
+control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._lbl_tablerototalcampania">
+<summary>
+Control lbl_tablerototalcampania.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._dv_tablerototalcampania">
+<summary>
+Control dv_tablerototalcampania.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._lbl_tablerocampaniacompletas">
+<summary>
+Control lbl_tablerocampaniacompletas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._dv_tablerocampaniascompletas">
+<summary>
+Control dv_tablerocampaniascompletas.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._lbl_tableroregistros">
+<summary>
+Control lbl_tableroregistros.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._dv_tableroregistros">
+<summary>
+Control dv_tableroregistros.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._lbl_tableronovedades">
+<summary>
+Control lbl_tableronovedades.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._dv_tableronovedades">
+<summary>
+Control dv_tableronovedades.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._lbl_tablerogrid">
+<summary>
+Control lbl_tablerogrid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._acc_tablerodescargar">
+<summary>
+Control acc_tablerodescargar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_admintablero._rpt_tablero_grid">
+<summary>
+Control rpt_tablero_grid.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._txt_loginusuario">
+<summary>
+Control txt_loginusuario.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._txt_logincontrasenia">
+<summary>
+Control txt_logincontrasenia.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._chk_loginrecordar">
+<summary>
+Control chk_loginrecordar.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._btn_loginsesion">
+<summary>
+Control btn_loginsesion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._myModal">
+<summary>
+Control myModal.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._lbl_loginmodaltitulo">
+<summary>
+Control lbl_loginmodaltitulo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._btn_loginmodalclose">
+<summary>
+Control btn_loginmodalclose.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_login._txt_loginmodaltexto">
+<summary>
+Control txt_loginmodaltexto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._head">
+<summary>
+Control head.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._frm_page">
+<summary>
+Control frm_page.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._img_adm_notifica_cantidad">
+<summary>
+Control img_adm_notifica_cantidad.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._rpt_adm_notificacion">
+<summary>
+Control rpt_adm_notificacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._img_adm_setup_icono">
+<summary>
+Control img_adm_setup_icono.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_master_itmperfil">
+<summary>
+Control btn_master_itmperfil.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_master_itmconfiguracion">
+<summary>
+Control btn_master_itmconfiguracion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btnm_master_itmcerrarsesion">
+<summary>
+Control btnm_master_itmcerrarsesion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._itm_master_menu1">
+<summary>
+Control itm_master_menu1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mnu_tablero">
+<summary>
+Control btn_mnu_tablero.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._itm_master_menu2">
+<summary>
+Control itm_master_menu2.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mnu_creacion">
+<summary>
+Control btn_mnu_creacion.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._itm_master_menu3">
+<summary>
+Control itm_master_menu3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mnu_consulta">
+<summary>
+Control btn_mnu_consulta.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._itm_master_menu4">
+<summary>
+Control itm_master_menu4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mnu_consultaavanzada">
+<summary>
+Control btn_mnu_consultaavanzada.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._itm_master_menu5">
+<summary>
+Control itm_master_menu5.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mnu_reporte">
+<summary>
+Control btn_mnu_reporte.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._ContentPlaceHolder1">
+<summary>
+Control ContentPlaceHolder1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._myModalmaster">
+<summary>
+Control myModalmaster.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._lbl_mastermodaltitulo">
+<summary>
+Control lbl_mastermodaltitulo.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._btn_mastermodalclose">
+<summary>
+Control btn_mastermodalclose.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_master._txt_mastermodaltexto">
+<summary>
+Control txt_mastermodaltexto.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:WebCallCenterAutomatizado.page_reporte._form1">
+<summary>
+control form1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>
